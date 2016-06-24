@@ -1,0 +1,156 @@
+html, body {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Helvetica, Arial, Verdana, Sans-Serif;
+}
+
+h2 {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.bg {
+    position: absolute;
+    left : 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.png);
+    z-index: -1;
+}
+
+.wrap {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#info_player{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    left: 490px;
+    top: 210px;
+    z-index: 0;
+}
+
+#smart_player {
+    width: 1280px;
+    height: 720px;
+    background: #000;
+    z-index: -1;
+}
+
+#log {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: none;
+}
+
+.menu, .legend{
+    background: #2a2f36; /*for old tvs*/
+    background: rgba(42,47,54,0.75);
+}
+
+.menu, .scenes-wrapper {
+    top: 0;
+    bottom: 35px; /*legend height*/
+}
+
+.menu {
+    width: 200px;
+    position: absolute;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.menu-item.focus {
+    color: #f23c55;
+    border-left: 5px solid #f23c55;
+}
+
+.video-item {
+    color: #fff;
+    height: 80px;
+    width: 190px;
+    padding: 5px;
+    display: inline-block;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #f23c55;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #2a2f36;
+}
+
+.video-item.focus {
+    background: url(../img/select.jpg) no-repeat;
+}
+
+.info{
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+
+}
+
+.desc {
+    text-align: left;
+    font-size: 12px;
+}
+
+.logo {
+    margin: 10px 0 20px 15px;
+    width: 153px;
+    height: 30px;
+    background: url(../img/logo.png) no-repeat;
+}
+
+.scenes-wrapper {
+    position: absolute;
+    left: 200px;
+    width: 1080px; /*body width - left*/
+    color: #2a2f36;
+}
+
+.scene {
+    height: 100%;
+    position: relative;
+    display: none;
+    overflow: hidden;
+}
+
+.legend {
+    height: 35px;
+    padding: 0;
+}
