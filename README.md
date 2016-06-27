@@ -1,2 +1,3 @@
 # S_STVApp
-Simple Smart TV application
+* Client: HTML5, JavaScript, CSS
+* Sever: Node.js (Express, Request)
